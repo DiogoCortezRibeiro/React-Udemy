@@ -1,13 +1,13 @@
 import React from "react";
 
-import Membro from './Membro';
-
 export default (props) => {
     return (
         <div>
-            <Membro nome="Diogo" sobrenome={props.sobrenome}/>
-            <Membro nome="Thallita" sobrenome={props.sobrenome}/>
-            <Membro nome="Alice" sobrenome={props.sobrenome}/>
+            {
+                React.Children.map(props.children, (elemento) => {
+                    return React.cloneElement(elemento, props)
+                })
+            }
         </div>
     )
 }
