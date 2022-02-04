@@ -8,6 +8,9 @@ import Aleatorio from "./components/basicos/Aleatorio.jsx";
 import Card from './components/layout/Card';
 import Familia from './components/basicos/Familia';
 import Membro from './components/basicos/Membro'
+import DiretaPai from "./components/comunicacao/DiretaPai.jsx";
+import IndiretaPai from "./components/comunicacao/IndiretaPai.jsx";
+import Input from "./components/formulario/Input.jsx";
 
 export default () => {
     return (
@@ -15,6 +18,18 @@ export default () => {
             <h1>Fundamentos React</h1>
 
             <div className="cards">
+
+                <Card titulo="#08 - Comunicação Controlado" color="#E45F56">
+                    <Input />
+                </Card>
+
+                <Card titulo="#07 - Comunicação Indireta" color="#8BAD39">
+                    <IndiretaPai />
+                </Card>
+
+                <Card titulo="#06 - Comunicação Direta" color="#59323C">
+                    <DiretaPai />
+                </Card>
 
                 <Card titulo="#05 - Componente com filhos" color="#00C8F8">
                     <Familia sobrenome="Cortez"> 
