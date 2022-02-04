@@ -11,6 +11,8 @@ import Membro from './components/basicos/Membro'
 import DiretaPai from "./components/comunicacao/DiretaPai.jsx";
 import IndiretaPai from "./components/comunicacao/IndiretaPai.jsx";
 import Input from "./components/formulario/Input.jsx";
+import Contador from "./components/contador/Contador.jsx";
+import Mega from "./components/mega/Mega.jsx";
 
 export default () => {
     return (
@@ -18,6 +20,14 @@ export default () => {
             <h1>Fundamentos React</h1>
 
             <div className="cards">
+
+                <Card titulo="#10 - Mega Sena" color="rgb(42 207 154 )">
+                    <Mega />
+                </Card>
+
+                <Card titulo="#09 - Contador" color="#424242">
+                    <Contador numeroInicial={10} />
+                </Card>
 
                 <Card titulo="#08 - Comunicação Controlado" color="#E45F56">
                     <Input />
